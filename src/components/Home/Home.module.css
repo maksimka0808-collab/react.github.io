@@ -1,0 +1,21 @@
+:root {
+    --text-color: #ffffff;
+    --secondary-text: #ffffff;
+    --post-bg: #181818; /* Черный фон для темной темы */
+    --border-color: #262626; /* Тонкий серый разделитель */
+    --avatar-size: 50px;
+    --icon-size: 20px;
+}
+
+.home {
+    background-color: #181818; /* Фон страницы */
+    color: var(--text-color);
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирование ленты */
+    padding-top: 20px;
+    border-radius: 40px;
+    border: 1px solid #3b3b3b;
+}

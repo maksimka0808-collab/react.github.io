@@ -1,0 +1,90 @@
+:root {
+    --text-color: #ffffff;
+    --secondary-text: #2c2c2c;
+    --post-bg: #181818;
+    --border-color: #262626;
+    --avatar-size: 50px;
+    --icon-size: 20px;
+}
+
+.post {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 50px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    background-color: #333; /* Заглушка для аватара */
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.postUsername {
+    font-weight: bold;
+    font-size: 17px;
+    color: var(--text-color);
+}
+
+.postContent {
+
+}
+
+.postContent p {
+    text-align: start;
+    line-height: 1.4;
+    font-size: 20px;
+    margin: 0;
+}
+
+.postPhoto img {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #1c1c1c;
+}
+
+
+.postReactions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.postReactions img {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    cursor: pointer;
+    filter: invert(70%);
+    transition: filter 0.2s;
+}
+
+.PostIcons img:hover {
+    filter: invert(100%);
+}
+
+.postReaction button {
+    all: unset;
+}
+
+.postReaction {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

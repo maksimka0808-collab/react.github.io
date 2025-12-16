@@ -1,0 +1,115 @@
+/* Переменные для удобства */
+:root {
+    --sidebar-width: 65px;
+    --main-bg: #090909;
+    --text-color: #ffffff;
+    --icon-size: 24px;
+    --active-color: #ffffff;
+    --inactive-color: #8e8e8e;
+}
+
+/* Общий контейнер боковой панели */
+.sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-bg);
+    border-right: 1px solid #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+/* Стили для ссылки NavLink вокруг логотипа */
+.logoLink {
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+/* Стили для логотипа (самый верхний элемент) */
+.logo {
+    height: 40px;
+    width: 40px;
+    display: flex;
+}
+
+/* Основная навигационная область */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Стиль для NavLink (элемент навигации) */
+.navItem {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    color: var(--inactive-color); /* Иконки по умолчанию неактивны */
+    text-decoration: none; /* Убираем подчеркивание NavLink */
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+
+.navIcon {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert(0.5);
+}
+
+.navIcon:hover {
+    filter: invert(1);
+    transition: ease-in 0.1s;
+}
+
+
+/* Кнопка "Создать" (плюс) */
+.createButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--inactive-color);
+    color: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.createButton:hover {
+    background-color: #8e8e8e;
+}
+
+/* Кнопка "Настройки" (самая нижняя) */
+.settings {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--inactive-color);
+}
+
+.settingsIcon {
+    font-size: var(--icon-size);
+}
+
+.settings:hover {
+    color: var(--active-color);
+}
